@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus life at Uganda Martyrs Secondary School Namugongo, Kampala, Uganda.">
+
+    <title>Campus Life | Uganda Martyrs Secondary School Namugongo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SCHOOL HEADER (same as home page) -->
+    <header style="display: flex; align-items: center;background-color: white; padding: 20px;">
+        <img src="image/image_1.jpg" alt="U.M.S.S. Namugongo school logo" style="width: 200px; background: white; padding: 8px; border-radius: 10px; margin-right: 25px;">
+        <div>
+            <h1 style="margin:0; font-size: 32px;">UGANDA MARTYRS NAMUGONGO</h1>
+            <p>Uganda Martyrs Secondary School Namugongo</p>
+            <p>P.O. BOX 2435</p>
+            <p> TEL:0756432145/0777965432</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#vision">Vision</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="campus.html" class="active">Campus Life</a>
+        <a href="index.html#contact">Contact Us</a>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="hero page-hero" id="top">
+        <div class="hero-content">
+            <h2>Campus Life at Uganda Martyrs Secondary School Namugongo</h2>
+
+            <p>
+                A green, welcoming place where students learn,
+                grow in faith and build lasting friendships.
+            </p>
+
+            <a href="#gallery" class="btn">See Our Campus</a>
+        </div>
+    </section>
+
+    <!-- CAMPUS GALLERY -->
+    <section class="about section" id="gallery">
+        <h2>Our Campus</h2>
+
+        <p>
+            Our school grounds are kept clean, green and peaceful so that
+            every student can study and play in a healthy environment.
+        </p>
+
+        <div class="gallery">
+            <figure class="gallery-item">
+                <img src="image/pic1.jpg" alt="Classroom block, lawns and trees on the school compound">
+                <figcaption>Classroom block and school gardens</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="image/school.jpg" alt="Main school building with a walkway and sports grounds">
+                <figcaption>Main school building</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- SCHOOL EMBLEM -->
+    <section class="values section" id="emblem">
+        <h2>Our School Emblem</h2>
+
+        <div class="cards">
+            <div class="card emblem-card">
+                <img src="image/image_1.jpg" alt="U.M.S.S. Namugongo crest with the motto Perseverance and Success">
+            </div>
+
+            <div class="card">
+                <h3>Perseverance &amp; Success</h3>
+
+                <p>
+                    Our crest carries the motto <strong>Perseverance &amp; Success</strong>.
+                    It reminds every student that hard work, patience and
+                    faith lead to success. The cross at the top shows that
+                    we put God first in everything we do.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOL VALUES -->
+    <section class="about section" id="values">
+        <h2>What We Stand For</h2>
+
+        <div class="cards cards-four">
+            <div class="card">
+                <h3>Faith</h3>
+                <p>We put God first in all school activities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Knowledge</h3>
+                <p>We promote academic excellence in every class.</p>
+            </div>
+
+            <div class="card">
+                <h3>Excellence</h3>
+                <p>We help every student develop their talents.</p>
+            </div>
+
+            <div class="card">
+                <h3>Integrity</h3>
+                <p>We build discipline and good morals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CALL TO ACTION -->
+    <section class="contact section" id="contact">
+        <h2>Visit Us</h2>
+
+        <p>
+            Would you like to see our school for yourself?
+            Call us and we will gladly welcome you.
+        </p>
+
+        <p>
+            <a href="tel:0756432145">0756432145</a> /
+            <a href="tel:0777665432">0777665432</a>
+        </p>
+
+        <a href="index.html#contact" class="btn">All Contact Details</a>
+
+        <p class="slogan">Our Students Are Our Concern!</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            &copy;<span id="year"></span>
+            Uganda Martyrs Secondary School Namugongo.
+            All Rights Reserved.
+        </p>
+
+        <p>Faith | Knowledge | Excellence | Integrity</p>
+    </footer>
+
+    <!-- AUTOMATIC COPYRIGHT YEAR -->
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f5f7f5;
+    background-image: url("image/school.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* =========================
+   SCHOOL HEADER
+========================= */
+
+.header {
+    background-color: #064e32;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 5px solid #e6b422;
+}
+
+.school-name h1 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.school-name p {
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.school-name a {
+    color: white;
+    text-decoration: none;
+}
+
+.school-name a:hover {
+    color: #f3ca48;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    background-color: #033b27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #e6b422;
+    color: #033b27;
+}
+
+/* =========================
+   HOME PAGE BANNER
+========================= */
+
+.hero {
+    min-height: 430px;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #e6b422;
+    color: #173b29;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #064e32;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 60px 8%;
+}
+
+.section h2 {
+    color: #064e32;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   ABOUT / INTRODUCTION
+========================= */
+
+.about {
+    max-width: 1200px;
+    margin: auto;
+    color: #2f1be7;
+}
+
+.about p {
+    font-size: 17px;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* =========================
+   VISION AND MISSION
+========================= */
+
+.values {
+    background-color: #f6faf8;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid #e6b422;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #064e32;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 17px;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+    background-color: #064e32;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #f3ca48;
+}
+
+.contact p {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+.contact a {
+    color: #f3ca48;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.slogan {
+    margin-top: 25px !important;
+    font-size: 24px !important;
+    font-weight: bold;
+    color: #f3ca48;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #032b1c;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* =========================
+   SECOND PAGE (CAMPUS LIFE)
+========================= */
+
+.navbar a.active {
+    background-color: #e6b422;
+    color: #033b27;
+}
+
+.page-hero {
+    background-image: linear-gradient(rgba(3, 59, 39, 0.72), rgba(3, 59, 39, 0.72)),
+                      url("image/school.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    border-top: 5px solid #e6b422;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    padding: 14px 18px;
+    color: #064e32;
+    font-weight: bold;
+    text-align: center;
+}
+
+.emblem-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.emblem-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cards-four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 1200px;
+}
+
+.cards-four .card {
+    background-color: white;
+}
+
+.contact .btn {
+    margin-top: 10px;
+}
+
+/* =========================
+   TABLETS AND MOBILE PHONES
+========================= */
+
+@media screen and (max-width: 768px) {
+    .school-name h1 {
+        font-size: 25px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 55px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 6%;
+
+    }
+    .hero {
+        background-image: url(image/school.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .gallery,
+    .cards-four {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 240px;
+    }
+
+    .about p {
+        text-align: left;
+    }
+}
+
+/* =========================
+   SMALL MOBILE PHONES
+========================= */
+
+@media screen and (max-width: 480px) {
+    .school-name h1 {
+        font-size: 21px;
+    }
+
+    .school-name p {
+        font-size: 14px;
+    }
+
+    .navbar {
+        gap: 3px;
+        padding: 8px 4px;
+    }
+
+    .navbar a {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .slogan {
+        font-size: 20px !important;
+    }
+}
